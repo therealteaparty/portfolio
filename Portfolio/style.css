@@ -612,6 +612,10 @@ model-viewer:hover {
     .item-box h1{
     font-size: 40px;    
     }
+
+    model-viewer {
+    margin-left: 0%;
+    }
 }
 
     
