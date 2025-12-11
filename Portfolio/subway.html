@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" charset="UTF-8">
+        <title> Téa Cassidy Held </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">    </head>
+        <body>
+        <section class = "header-item">
+            <nav>
+                <!--    <a href="index.html"><img src="images/logo.png"></a>    -->
+    
+
+                <div class = "nav-links" id = "navLinks">
+                <i class="bi bi-x-circle" onclick = "hideMenu()"></i>
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="work.html">WORK</a></li>
+                        <li> <a href="about.html">ABOUT</a></li>
+                        <li> <a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            <i class="bi bi-list" onclick = "showMenu()"></i>
+            </nav>
+
+
+            <div class="item-box">
+                <h1> Subway Gounds </h1>
+                <p>An indoor urban environment encompassing the world of robots and their relationship with human-made structures</p>
+                <br>
+                <h2>Development: Unity 6 </h2>
+                <br> 
+                <h2>Art: Autodesk Maya, Blender, Adobe Substance Painter </h2>
+
+
+            </div>
+
+        </section>
+
+            <section class="item"> 
+
+                <div class = "video-div">
+                <iframe src="https://www.youtube.com/embed/ArmrEo7dXTU?si=8i5j7QJR90qYMXxT"></iframe>
+                <p>
+                    <strong>Subway Grounds </strong>is an exploration of building a narrative world through modeling, staging, and texturing. The reality of humanoid robots is supported by the modern architecture of the space around them, the colorful nature of surrounding objects and lighting, as well as hidden images and textures scattered throughout the world.
+                </p>
+                </div>
+
+                <br>
+
+                <div class = "video-div">
+                <iframe src="https://www.youtube.com/embed/ArmrEo7dXTU?si=4uxitKPdz8uNwYxu"></iframe>
+                <p>
+                    <strong>Subway Grounds </strong>was additionally developed for a VR Youtube 360 Experience, in which a user may look in all directions and experience an audio and visual environment as the camera navigates seamlessly through the scene.
+                </p>
+                </div>
+
+                <hr class = "solid-line">
+
+                <div class="image-grid">
+                    <img src="Subway/unnamed.png">
+                    <img src="Subway/good.png">
+                    <img src="Subway/train.png">
+                </div>
+
+                <br>
+                <br>
+
+                <hr class = "solid-line">
+
+            </section>
+
+
+
+
+
+        <!-- JS for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        
+        <!-- footer -->
+        
+        <section class="footer" >
+            <img src="images/icon.png" class = "icon-size">
+            <p> Luddy School of Informatics, Computing, and Engineering.</p>
+                    <div class="footer-links"> 
+                        <ul>
+                            <li> <a href="index.html">HOME</a></li>
+                            <li> <a href="work.html">WORK</a></li>
+                            <li> <a href="about.html">ABOUT</a></li>
+                            <li> <a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+
+                <p>teaheld@iu.edu</p>
+            <br>
+        </section>
+
+ 
+    </body>
+</html>

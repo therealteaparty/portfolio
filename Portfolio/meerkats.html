@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" charset="UTF-8">
+        <title> Téa Cassidy Held </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">    </head>
+        <body>
+        <section class = "header-item">
+            <nav>
+                <!--    <a href="index.html"><img src="images/logo.png"></a>    -->
+    
+
+                <div class = "nav-links" id = "navLinks">
+                <i class="bi bi-x-circle" onclick = "hideMenu()"></i>
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="work.html">WORK</a></li>
+                        <li> <a href="about.html">ABOUT</a></li>
+                        <li> <a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            <i class="bi bi-list" onclick = "showMenu()"></i>
+            </nav>
+
+
+            <div class="item-box">
+                <h1> Meerkats </h1>
+                <p>A realistic 3D environment</p>
+                <h2>Development: Unreal Engine 5 </h2>
+                <br> 
+                <h2>Art: Autodesk Maya, Adobe Substance Painter, Procreate </h2>
+
+
+            </div>
+
+        </section>
+
+            <section class="item"> 
+
+
+                <div class = "video-div">
+
+                <video autoplay loop playsinline controls>
+                    <source src="meerkats/video/heldtea-render-video.mp4" type ="video/mp4">
+                </video>
+
+                <p>
+                <strong>Meerkats</strong> is a study of the realistic development of a 
+                modern, urban, indoor environment. It emphasized best practices for developing hard-surface models
+                with computationally sound topology, as well as strong compositional aesthetics through the use of
+                texturing and staging. The most influential practices involved in the creation of this environment includes 
+                modeling, UV unwrapping, texture painting, post-process effects, rendering, and project management. 
+                Narratively, Meetkats explores the night after a high-school dance. It is up to the viewer to decipher 
+                echoes of worldbuilding through the nature of the objects, textures, and mood.
+
+                </p>
+
+                </div>
+                
+                <br>
+                
+
+                <hr class = "solid-line">
+
+                <div class="image-grid">
+                    <img src="meerkats/renders/school01.png">
+                    <img src="meerkats/renders/school03.png">
+                    <img src="meerkats/renders/school16.png">
+                    <img src="meerkats/renders/school17.png">
+                    <img src="meerkats/renders/school21.png">
+                    <img src="meerkats/renders/school28.png">
+                    <img src="meerkats/renders/school20.png">
+                    <img src="meerkats/renders/school02.png">
+                    <img src="meerkats/renders/school23.png">
+                </div>
+
+                <br>
+                <br>
+
+                <hr class = "solid-line">
+
+            </section>
+
+
+
+
+
+        <!-- JS for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        
+        <!-- footer -->
+        
+        <section class="footer" >
+            <img src="images/icon.png" class = "icon-size">
+            <p> Luddy School of Informatics, Computing, and Engineering.</p>
+                    <div class="footer-links"> 
+                        <ul>
+                            <li> <a href="index.html">HOME</a></li>
+                            <li> <a href="work.html">WORK</a></li>
+                            <li> <a href="about.html">ABOUT</a></li>
+                            <li> <a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+
+                <p>teaheld@iu.edu</p>
+            <br>
+        </section>
+
+ 
+    </body>
+</html>

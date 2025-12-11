@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" charset="UTF-8">
+        <title> Téa Cassidy Held </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">    </head>
+        <body>
+        <section class = "header-item">
+            <nav>
+                <!--    <a href="index.html"><img src="images/logo.png"></a>    -->
+    
+
+                <div class = "nav-links" id = "navLinks">
+                <i class="bi bi-x-circle" onclick = "hideMenu()"></i>
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="work.html">WORK</a></li>
+                        <li> <a href="about.html">ABOUT</a></li>
+                        <li> <a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            <i class="bi bi-list" onclick = "showMenu()"></i>
+            </nav>
+
+
+            <div class="item-box">
+                <h1> Missed Calls </h1>
+                <p>An interactive mini-game to uncover the story of a missing girl</p>
+                <br>
+                <h2>Development: Unreal Engine 5, Unreal Blueprints </h2>
+                <br> 
+                <h2>Art: Autodesk Maya </h2>
+
+
+            </div>
+
+        </section>
+
+            <section class="item"> 
+
+                <div class = "video-div">
+                <video autoplay loop playsinline controls>
+                    <source src="missedCalls/missed-calls.mp4">
+                </video>
+                <p>
+                <strong>Missed Calls</strong> explores the story behind an unknown character, 
+                brought from the perspective of a player in the midst of searching a 
+                case of a missing person. Through clues hidden around the small living 
+                space, the player may uncover more explicit details regarding 
+                the whereabouts of the homeowner. The game emphasizes experiences in exploring
+                pieces of evidence, sound, and text. The developement of this story emphasized best practices
+                for game feel and UI design, or the overall intersection between 
+                two-dimensional visuals, sound, and programming.
+                </p>
+
+                </div>
+                
+
+                <hr class = "solid-line">
+
+                <div class="image-grid">
+                    <img src="missedCalls/calls1.png">
+                    <img src="missedCalls/calls2.png">
+                    <img src="missedCalls/calls3.png">
+                    <img src="missedCalls/calls4.png">
+                    <img src="missedCalls/calls5.png">
+                    <img src="missedCalls/calls6.png">
+                </div>
+
+                <br>
+                <br>
+
+
+                <hr class = "solid-line">
+
+            </section>
+
+
+
+
+        <!-- JS for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        
+        <!-- footer -->
+        
+        <section class="footer" >
+            <img src="images/icon.png" class = "icon-size">
+            <p> Luddy School of Informatics, Computing, and Engineering.</p>
+                    <div class="footer-links"> 
+                        <ul>
+                            <li> <a href="index.html">HOME</a></li>
+                            <li> <a href="work.html">WORK</a></li>
+                            <li> <a href="about.html">ABOUT</a></li>
+                            <li> <a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+
+                <p>teaheld@iu.edu</p>
+            <br>
+        </section>
+
+ 
+    </body>
+</html>

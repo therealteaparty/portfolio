@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" charset="UTF-8">
+        <title> Téa Cassidy Held </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">    </head>
+        <body>
+        <section class = "header-item">
+            <nav>
+                <!--    <a href="index.html"><img src="images/logo.png"></a>    -->
+    
+
+                <div class = "nav-links" id = "navLinks">
+                <i class="bi bi-x-circle" onclick = "hideMenu()"></i>
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="work.html">WORK</a></li>
+                        <li> <a href="about.html">ABOUT</a></li>
+                        <li> <a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            <i class="bi bi-list" onclick = "showMenu()"></i>
+            </nav>
+
+
+            <div class="item-box">
+                <h1> Marine Merge </h1>
+                <p>An evolution game created for the Mini Jame Gam #43 on Itch</p>
+                <br>
+                <h2>Development: Unreal Engine 5, Unreal Blueprints </h2>
+                <br> 
+                <h2>Art: Autodesk Maya, Blender </h2>
+
+
+            </div>
+
+        </section>
+
+            <section class="item"> 
+
+                <div class = "video-div">
+                <video autoplay loop playsinline controls>
+                    <source src="marineMerge/merge.mp4">
+                </video>
+                <p>
+                <strong>Marine Merge</strong> was created as a puzzle game for the theme, 
+                "Overflow," with a special item "brush". On a team of two over the course of three days, 
+                Téa and her partner created an experience inspired by the classic evolution game in which the player cares
+                 for their aquarium and avoids overpopulating their tank with bigger and bigger aquatic 
+                 creatures. The player may evolve from a tiny minnow to a great white shark if they play carefully
+                  and intentionally, learning the patterns of which fish evolve. While played on
+                a 2D landscape, the visuals were inspired by a cartoon-shaded 3D structure. Téa's contrubution emphasized
+                gameplay programming and 3D modeling.
+                </p>
+                </div>
+                <br>
+                
+                <hr class = "solid-line">
+
+                <div class="image-grid">
+                    <img src="marineMerge/merge1.png">
+                    <img src="marineMerge/merge3.png">
+                    <img src="marineMerge/merge2.png">
+                </div>
+
+                <br>
+                <br>
+
+
+                <a class="item-btn" href="https://symbiontprojects.itch.io/marine-merge"> Play on itch.io </a>
+
+                <hr class = "solid-line">
+
+            </section>
+
+
+
+
+
+        <!-- JS for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        
+        <!-- footer -->
+        
+        <section class="footer" >
+            <img src="images/icon.png" class = "icon-size">
+            <p> Luddy School of Informatics, Computing, and Engineering.</p>
+                    <div class="footer-links"> 
+                        <ul>
+                            <li> <a href="index.html">HOME</a></li>
+                            <li> <a href="work.html">WORK</a></li>
+                            <li> <a href="about.html">ABOUT</a></li>
+                            <li> <a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+
+                <p>teaheld@iu.edu</p>
+            <br>
+        </section>
+
+ 
+    </body>
+</html>
