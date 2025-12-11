@@ -9,14 +9,6 @@ html {
 }
 
 
-/*
-.plus-jakarta-sans-<uniquifier> {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-*/
 
 .header {
     min-height: 100vh;
@@ -73,7 +65,7 @@ nav img{
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .nav-links ul li::after {
@@ -503,12 +495,14 @@ hr.solid-line {
 }
 
 model-viewer {
-    width: 300px;
-    height: 300px;
+    width: 375px;
+    height: 375px;
     border: 3px solid #9aaee6;
     border-radius: 25px;
     margin: 0px;
     transition: 0.5s;
+    margin-left: 8%;
+    margin-bottom: 10%;
 }
 
 model-viewer:hover {
@@ -559,10 +553,6 @@ model-viewer:hover {
 
 
 
-
-
-
-
 /* https://css-tricks.com/seamless-responsive-photo-grid/ */
 
 .images-about {
@@ -602,11 +592,11 @@ model-viewer:hover {
   }
 }
 @media (max-width: 800px) {
-.images-about {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
+    .images-about {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
 
     .img-about {
         width: 200px; 
@@ -615,9 +605,8 @@ model-viewer:hover {
         object-fit: cover;
         position: absolute;
         top: 275px;           
-        right: 10%;          
-
-    box-shadow: 0 0 30px 0px rgba(6, 44, 83, 0.7);
+        right: 10%;
+        box-shadow: 0 0 30px 0px rgba(6, 44, 83, 0.7);
     }
 
 
@@ -633,9 +622,35 @@ model-viewer:hover {
         height: 100px;
     }
 
+    .image-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    width: 100%;
+    gap: 10px;
+    }
 
 
+    .video-div {
+        flex-direction: column;   /* stack vertically instead */
+        align-items: flex-start; 
+    }
+
+    .video-div video,
+    .video-div a,
+    .video-div iframe,
+    .video-div p {
+        width: 100%; /* full width on mobile */
+    }
+
+
+    .video-div p {
+        font-size: 18px;    
+    }
+
+    
 }
+
+
 @media (max-width: 400px) {
 .images-about {
   -moz-column-count:    1;
