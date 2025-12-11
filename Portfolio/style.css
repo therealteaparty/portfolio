@@ -614,11 +614,13 @@ model-viewer:hover {
     }
 
     model-viewer {
-    margin-left: 0%;
+        width: 325px;
+        height: 325px;
+        margin-left: 2%;
     }
-}
 
-    
+
+}
 
 
 @media (max-width: 400px) {
